@@ -7,8 +7,7 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 
-// export const API_URL = 'https://c8vbq8z1-8080.euw.devtunnels.ms'
-export const API_URL = 'http://localhost:8080'
+export const API_URL = import.meta.env.VITE_API_URL || ''
 
 export function calculateTotal(
   cartItems: {
