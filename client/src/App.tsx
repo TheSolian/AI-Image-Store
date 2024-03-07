@@ -1,6 +1,5 @@
 import { SignedIn, SignedOut, UserButton } from '@clerk/clerk-react'
 import { Link, Outlet } from '@tanstack/react-router'
-import { TanStackRouterDevtools } from '@tanstack/router-devtools'
 import { Providers } from './components/providers'
 import { ShoppingCart } from './components/shopping-cart'
 import { buttonVariants } from './components/ui/button'
@@ -29,7 +28,6 @@ function App() {
         </header>
         <Separator />
         <Outlet />
-        {process.env.NODE_ENV === 'development' && <TanStackRouterDevtools />}
         <Toaster />
       </div>
     </Providers>
