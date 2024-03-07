@@ -29,7 +29,6 @@ function App() {
         </header>
         <Separator />
         <Outlet />
-        {process.env.NODE_ENV === 'development' && <TanStackRouterDevtools />}
         <Toaster />
       </div>
     </Providers>
